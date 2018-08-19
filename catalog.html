@@ -8,7 +8,11 @@
   	<header class="main-header">
     	<nav class="main-navigation">
     		<a class="main-header-logo" href="index.html">Device</a>
-    	  <!-- Здесь будет форма -->
+    	  <form class="search-form" action="/echo" method="post">
+          <button class="search-button" type="submit" aria-label="Начать поиск"></button>
+          <label class="visually-hidden" for="search">Поиск по сайту</label>
+          <input id="search" type="search" name="search" placeholder="Поиск по сайту">
+        </form> 
         <ul class="user-navigation">
           <li class="authorized-user">
             <a class="user-profile" href="#">Валентин Петухов</a>
@@ -68,14 +72,58 @@
           <a href="index.html">Главная</a>
         </li>
         <li>
-          <a href="calalog.html">Каталог товаров</a>
+          <a href="#">Каталог товаров</a>
         </li>
         <li class="breadcrumbs-current">Моноподы для селфи</li>
       </ul>
 
       <section class="filters">
         <h2>Фильтр:</h2>
-        <!-- Здесь будет форма -->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <!-- range -->
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
+                <label for="filter-black">Черный</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="filter-white">
+                <label for="filter-white">Белый</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="filter-blue" checked>
+                <label for="filter-blue">Синий</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="filter-red" checked>
+                <label for="filter-red">Красный</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="filter-pink">
+                <label for="filter-pink">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" id="filter-yes" checked>
+                <label for="filter-yes">Есть</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="no" id="filter-no">
+                <label for="filter-no">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
       </section>
 
       <section class="sorting">
@@ -105,7 +153,7 @@
         <h2 class="visually-hidden">Список моноподов для селфи</h2>
         <ul class="catalog-list">
           <li class="catalog-list-item">
-            <img class="catalog-item-image" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+            <img class="catalog-item-image" src="img/monopod-amateur.jpg" width="360" height="380" alt="Любительская селфи-палка">
             <a href="catalog-item.html">
               <h3>Любительская селфи-палка</h3>
             </a>
@@ -118,7 +166,7 @@
             </div>
           </li>
           <li class="catalog-list-item">
-            <img class="catalog-item-image" src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+            <img class="catalog-item-image" src="img/monopod-profi.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
             <a href="catalog-item.html">
               <h3>Профессиональная селфи-палка</h3>
             </a>
@@ -131,7 +179,7 @@
             </div>
           </li>
           <li class="catalog-list-item">
-            <img class="catalog-item-image" src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+            <img class="catalog-item-image" src="img/monopod-underwater.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
             <a href="catalog-item.html">
               <h3>Непотопляемая селфи-палка</h3>
             </a>
@@ -144,7 +192,7 @@
             </div>
           </li>
           <li class="catalog-list-item">
-            <img class="catalog-item-image" src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
+            <img class="catalog-item-image" src="img/monopod-follow-me.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
             <span class="catalog-item-new">new</span>
             <a href="catalog-item.html">
               <h3>Селфи-палка &laquo;Следуй за мной&raquo;</h3>
@@ -219,7 +267,7 @@
         </li>
       </ul>
       <a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="https://placehold.it/100x50" width="27" height="35" alt="Логотип HTML Academy">
+        <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy">
       </a>
     </footer>
   </body>
