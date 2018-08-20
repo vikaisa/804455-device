@@ -7,15 +7,15 @@
   <body>
   	<header class="main-header">
     	<nav class="main-navigation">
-    		<a class="main-header-logo" href="index.html">Device</a>
-    	  <form class="search-form" action="/echo" method="post">
+    		<a class="main-header-logo" href="index.html" aria-label="Логотип интернет-магазина Device, при клике ведущий на главную">Device</a>
+    	  <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
           <button class="search-button" type="submit" aria-label="Начать поиск"></button>
           <label class="visually-hidden" for="search">Поиск по сайту</label>
           <input id="search" type="search" name="search" placeholder="Поиск по сайту">
         </form> 
         <ul class="user-navigation">
           <li class="authorized-user">
-            <a class="user-profile" href="#">Валентин Петухов</a>
+            <a class="user-profile" href="#" aria-label="Авторизованный пользователь">Валентин Петухов</a>
           </li>
           <li class="logout-link">
             <a href="#">Выйти</a>
@@ -79,10 +79,10 @@
 
       <section class="filters">
         <h2>Фильтр:</h2>
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
-            <legend>Стоимость:</legend>
-            <!-- range -->
+            <label for="price-range">Стоимость:</label>
+            от 0 <input type="range" name="price-range" min="0" max="5000" id="price-range"> до 5000
           </fieldset>
           <fieldset>
             <legend>Цвет</legend>
@@ -141,10 +141,10 @@
         </ul>
         <ul class="sorting-priority-list">
           <li class="sorting-priority-button-up">
-            <a href="#"></a>
+            <a href="#" aria-label="Я не знаю, как описать этот элемент"></a>
           </li>
           <li class="sorting-priority-button-down">
-            <a href="#"></a>
+            <a href="#" aria-label="Я не знаю, как описать этот элемент"></a>
           </li>
         </ul>
       </section>
@@ -154,7 +154,7 @@
         <ul class="catalog-list">
           <li class="catalog-list-item">
             <img class="catalog-item-image" src="img/monopod-amateur.jpg" width="360" height="380" alt="Любительская селфи-палка">
-            <a href="catalog-item.html">
+            <a href="#">
               <h3>Любительская селфи-палка</h3>
             </a>
             <p class="catalog-item-price">
@@ -167,7 +167,7 @@
           </li>
           <li class="catalog-list-item">
             <img class="catalog-item-image" src="img/monopod-profi.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-            <a href="catalog-item.html">
+            <a href="#">
               <h3>Профессиональная селфи-палка</h3>
             </a>
             <p class="catalog-item-price">
@@ -180,7 +180,7 @@
           </li>
           <li class="catalog-list-item">
             <img class="catalog-item-image" src="img/monopod-underwater.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-            <a href="catalog-item.html">
+            <a href="#">
               <h3>Непотопляемая селфи-палка</h3>
             </a>
             <p class="catalog-item-price">
@@ -194,7 +194,7 @@
           <li class="catalog-list-item">
             <img class="catalog-item-image" src="img/monopod-follow-me.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
             <span class="catalog-item-new">new</span>
-            <a href="catalog-item.html">
+            <a href="#">
               <h3>Селфи-палка &laquo;Следуй за мной&raquo;</h3>
             </a>
             <p class="catalog-item-price">
@@ -206,11 +206,11 @@
             </div>
           </li>
         </ul>
-        <ul class="pagination-list">
+        <ul class="pagination-list" aria-label="Выбор текущей страницы">
           <li class="pagination-item pagination-item-prev">
             <a href="#">Назад</a>
           </li>
-          <li class="pagination-item pagination-item-current">
+          <li class="pagination-item pagination-item-current" aria-label="Вы на странице 1">
             <a>1</a>
           </li>
           <li class="pagination-item">
@@ -227,11 +227,11 @@
     </main>
 
     <footer class="main-footer">
-      <a class="footer-logo" href="index.html">Device</a>
-      <address>г.Москва, ул. Строителей, 15</address>
+      <a class="footer-logo" href="index.html" aria-label="Логотип интернет-магазина Device, при клике ведущий на главную">Device</a>
+      <address aria-label="Адрес интернет-магазина Device">г.Москва, ул. Строителей, 15</address>
       <ul class="footer-user-navigation">
         <li class="footer-authorized-user">
-          <a class="footer-user-profile" href="#">Валентин Петухов</a>
+          <a class="footer-user-profile" href="#" aria-label="Авторизованный пользователь">Валентин Петухов</a>
         </li>
         <li class="footer-logout-link">
           <a href="#">Выйти</a>
@@ -267,7 +267,7 @@
         </li>
       </ul>
       <a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy">
+        <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy: переход на главную HTML Academy">
       </a>
     </footer>
   </body>

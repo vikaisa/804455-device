@@ -7,8 +7,8 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">Device</a>
-        <form class="search-form" action="/echo" method="post">
+        <a class="main-header-logo" aria-label="Главная интернет-магазина Device">Device</a>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
           <button class="search-button" type="submit" aria-label="Начать поиск"></button>
           <label class="visually-hidden" for="search">Поиск по сайту</label>
           <input id="search" type="search" name="search" placeholder="Поиск по сайту">
@@ -67,9 +67,9 @@
       <section class="promo slider">
         <h2 class="visually-hidden">Каталог промо-товаров</h2>
         <div class="wrapper">
-          <input type="radio" name="point" id="promo-slide1" checked>
-          <input type="radio" name="point" id="promo-slide2">
-          <input type="radio" name="point" id="promo-slide3">
+          <input type="radio" name="point" value="promo-slide1" id="promo-slide1" checked>
+          <input type="radio" name="point" value="promo-slide2" id="promo-slide2">
+          <input type="radio" name="point" value="promo-slide3" id="promo-slide3">
           <ul class="controls">
             <li class="controls-item"><label for="promo-slide1"></label></li>
             <li class="controls-item"><label for="promo-slide2"></label></li>
@@ -155,25 +155,25 @@
       <section class="services slider">
         <h2 class="visually-hidden">Каталог услуг</h2>
         <div class="wrapper">
-          <input type="radio" name="point" id="services-delivery" checked>
-          <input type="radio" name="point" id="services-warranty">
-          <input type="radio" name="point" id="services-credit">
-          <div class="controls">
-            <label for="services-delivery">Доставка</label>
-            <label for="services-warranty">Гарантия</label>
-            <label for="services-credit">Кредит</label>
-          </div>
-          <ul class="slider-list">
-            <li class="slider-item">
-              <h2 class="section-header">Доставка</h2>
+          <input type="radio" name="point-services" value="delivery" id="services-delivery" checked>
+          <input type="radio" name="point-services" value="warranty" id="services-warranty">
+          <input type="radio" name="point-services" value="credit" id="services-credit">
+          <ul class="controls-services">
+            <li class="controls-services-item"><label for="services-delivery">Доставка</label></li>
+            <li class="controls-services-item"><label for="services-warranty">Гарантия</label></li>
+            <li class="controls-services-item"><label for="services-credit">Кредит</label></li>
+          </ul>
+          <ul class="slider-list-services">
+            <li class="slider-item-services">
+              <h2 class="section-title">Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </li>
-            <li class="slider-item">
-              <h2 class="section-header">Гарантия</h2>
+            <li class="slider-item-services">
+              <h2 class="section-title">Гарантия</h2>
               <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
             </li>
             <li class="slider-item">
-              <h2 class="section-header">Кредит</h2>
+              <h2 class="section-title-services">Кредит</h2>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
             </li>
           </ul>
@@ -224,7 +224,7 @@
           <h2 class="section-title">Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <a class="contacts-map" href="#">
-            <img src="img/map-how-to-find-us.jpg" width="560" height="220" alt="Месторасположение офиса на карте по адресу улица Строителей, 15">
+            <img src="img/map-how-to-find-us.jpg" width="560" height="220" alt="Месторасположение офиса на карте: улица Строителей, 15">
           </a>
           <a class="button" href="#">Напишите нам</a>
         </section>
@@ -232,8 +232,8 @@
     </main>
 
     <footer class="main-footer">
-      <a class="footer-logo">Device</a>
-      <address>г.Москва, ул. Строителей, 15</address>
+      <a class="footer-logo" aria-label="Главная интернет-магазина Device">Device</a>
+      <address aria-label="Адрес интернет-магазина Device">г.Москва, ул. Строителей, 15</address>
       <ul class="footer-user-navigation">
         <li class="footer-login-link">
           <a href="#">Войти</a>
@@ -269,13 +269,13 @@
         </li>
       </ul>
       <a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy">
+        <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy: переход на главную HTML Academy">
       </a>
     </footer>
 
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
-      <form class="feedback-form" action="/echo" method="post">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="feedback-item">
           <label for="feedback-name">Ваше имя:</label>
           <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
