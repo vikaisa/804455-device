@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" aria-label="Главная интернет-магазина Device">Device</a>
+        <a class="main-header-logo">Device</a>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
           <button class="search-button" type="submit" aria-label="Начать поиск"></button>
           <label class="visually-hidden" for="search">Поиск по сайту</label>
@@ -67,13 +67,13 @@
       <section class="promo slider">
         <h2 class="visually-hidden">Каталог промо-товаров</h2>
         <div class="wrapper">
-          <input type="radio" name="point" value="promo-slide1" id="promo-slide1" checked>
-          <input type="radio" name="point" value="promo-slide2" id="promo-slide2">
-          <input type="radio" name="point" value="promo-slide3" id="promo-slide3">
+          <input id="promo-slide-1" type="radio" name="promo-slide" checked>
+          <input id="promo-slide-2" type="radio" name="promo-slide">
+          <input id="promo-slide-3" type="radio" name="promo-slide">
           <ul class="controls">
-            <li class="controls-item"><label for="promo-slide1"></label></li>
-            <li class="controls-item"><label for="promo-slide2"></label></li>
-            <li class="controls-item"><label for="promo-slide3"></label></li>
+            <li class="controls-item"><label for="promo-slide-1"></label></li>
+            <li class="controls-item"><label for="promo-slide-2"></label></li>
+            <li class="controls-item"><label for="promo-slide-3"></label></li>
           </ul>
           <ul class="slider-list">
             <li class="slider-item">
@@ -155,9 +155,9 @@
       <section class="services slider">
         <h2 class="visually-hidden">Каталог услуг</h2>
         <div class="wrapper">
-          <input type="radio" name="point-services" value="delivery" id="services-delivery" checked>
-          <input type="radio" name="point-services" value="warranty" id="services-warranty">
-          <input type="radio" name="point-services" value="credit" id="services-credit">
+          <input id="services-delivery" type="radio" name="services-slide" checked>
+          <input id="services-warranty" type="radio" name="services-slide">
+          <input id="services-credit" type="radio" name="services-slide">
           <ul class="controls-services">
             <li class="controls-services-item"><label for="services-delivery">Доставка</label></li>
             <li class="controls-services-item"><label for="services-warranty">Гарантия</label></li>
@@ -232,8 +232,8 @@
     </main>
 
     <footer class="main-footer">
-      <a class="footer-logo" aria-label="Главная интернет-магазина Device">Device</a>
-      <address aria-label="Адрес интернет-магазина Device">г.Москва, ул. Строителей, 15</address>
+      <a class="footer-logo">Device</a>
+      <address>г.Москва, ул. Строителей, 15</address>
       <ul class="footer-user-navigation">
         <li class="footer-login-link">
           <a href="#">Войти</a>
@@ -269,11 +269,12 @@
         </li>
       </ul>
       <a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy: переход на главную HTML Academy">
+        <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy">
       </a>
     </footer>
 
     <section class="modal modal-feedback">
+      <button class="modal-close" type="button" aria-label="Закрыть">x</button>
       <h2 class="visually-hidden">Обратная связь</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="feedback-item">
@@ -289,13 +290,12 @@
           <input id="feedback-message" type="text" name="message" placeholder="В свободной форме">
         </p>
         <button class="button" type="submit">Отправить</button>
-        <button class="modal-close" type="button" aria-label="Закрыть">x</button>
       </form>
     </section>
 
     <section class="modal modal-map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
       <button class="modal-close" type="button" aria-label="Закрыть">x</button>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
     </section>
   </body>
 </html>

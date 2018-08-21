@@ -7,7 +7,7 @@
   <body>
   	<header class="main-header">
     	<nav class="main-navigation">
-    		<a class="main-header-logo" href="index.html" aria-label="Логотип интернет-магазина Device, при клике ведущий на главную">Device</a>
+    		<a class="main-header-logo" href="index.html">Device</a>
     	  <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
           <button class="search-button" type="submit" aria-label="Начать поиск"></button>
           <label class="visually-hidden" for="search">Поиск по сайту</label>
@@ -15,7 +15,7 @@
         </form> 
         <ul class="user-navigation">
           <li class="authorized-user">
-            <a class="user-profile" href="#" aria-label="Авторизованный пользователь">Валентин Петухов</a>
+            <a class="user-profile" href="#">Валентин Петухов</a>
           </li>
           <li class="logout-link">
             <a href="#">Выйти</a>
@@ -82,7 +82,7 @@
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <label for="price-range">Стоимость:</label>
-            от 0 <input type="range" name="price-range" min="0" max="5000" id="price-range"> до 5000
+            от 0 <input id="price-range" type="range" name="price-range" min="0" max="5000"> до 5000
           </fieldset>
           <fieldset>
             <legend>Цвет</legend>
@@ -141,10 +141,10 @@
         </ul>
         <ul class="sorting-priority-list">
           <li class="sorting-priority-button-up">
-            <a href="#" aria-label="Я не знаю, как описать этот элемент"></a>
+            <a href="#" aria-label="Сортировка по возрастанию"></a>
           </li>
           <li class="sorting-priority-button-down">
-            <a href="#" aria-label="Я не знаю, как описать этот элемент"></a>
+            <a href="#" aria-label="Сортировка по убыванию"></a>
           </li>
         </ul>
       </section>
@@ -206,11 +206,11 @@
             </div>
           </li>
         </ul>
-        <ul class="pagination-list" aria-label="Выбор текущей страницы">
+        <ul class="pagination-list">
           <li class="pagination-item pagination-item-prev">
             <a href="#">Назад</a>
           </li>
-          <li class="pagination-item pagination-item-current" aria-label="Вы на странице 1">
+          <li class="pagination-item pagination-item-current">
             <a>1</a>
           </li>
           <li class="pagination-item">
@@ -227,11 +227,11 @@
     </main>
 
     <footer class="main-footer">
-      <a class="footer-logo" href="index.html" aria-label="Логотип интернет-магазина Device, при клике ведущий на главную">Device</a>
-      <address aria-label="Адрес интернет-магазина Device">г.Москва, ул. Строителей, 15</address>
+      <a class="footer-logo" href="index.html">Device</a>
+      <address>г.Москва, ул. Строителей, 15</address>
       <ul class="footer-user-navigation">
         <li class="footer-authorized-user">
-          <a class="footer-user-profile" href="#" aria-label="Авторизованный пользователь">Валентин Петухов</a>
+          <a class="footer-user-profile" href="#">Валентин Петухов</a>
         </li>
         <li class="footer-logout-link">
           <a href="#">Выйти</a>
@@ -267,7 +267,7 @@
         </li>
       </ul>
       <a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy: переход на главную HTML Academy">
+        <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy">
       </a>
     </footer>
   </body>
