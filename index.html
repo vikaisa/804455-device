@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Главная | Интернет-магазин Device</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">Device</a>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-          <button class="search-button" type="submit" aria-label="Начать поиск"></button>
           <label class="visually-hidden" for="search">Поиск по сайту</label>
-          <input id="search" type="search" name="search" placeholder="Поиск по сайту">
-        </form> 
+          <input class="search-form-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+          <button class="search-form-button" type="submit">Найти</button>
+        </form>
         <ul class="user-navigation">
           <li class="login-link">
             <a href="#">Войти</a>
@@ -78,49 +80,52 @@
           <ul class="slider-list">
             <li class="slider-item">
               <img src="img/promo-monopod-ben-stiller.png" width="385" height="485" alt="Моноподы для селфи">
+              <span class="slider-item-number">01</span>
               <h3>Делай селфи,<br>как Бен Стиллер!</h3>
               <p>Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
               <a class="button" href="#">Подробнее</a>
               <table class="promo-table">
-                <tr>
-                  <td>Длина палки</td>
-                  <td>Вес палки</td>
-                  <td>Материал</td>
-                </tr>
-                <tr>
+                <tr class="data">
                   <td>8,5 м</td>
                   <td>5 кг</td>
                   <td>Карбон</td>
+                </tr>
+                <tr class="features">
+                  <td>Длина палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
                 </tr>
               </table>
             </li>
             <li class="slider-item">
               <img src="img/promo-gears-fit.png" width="345" height="485" alt="Фитнес-браслеты">
+              <span class="slider-item-number">02</span>
               <h3>Худеем правильно!</h3>
               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <a href="#">Подробнее</a>
+              <a class="button" href="#">Подробнее</a>
               <table class="promo-table">
-                <tr>
-                  <td>Без подзарядки</td>
-                </tr>
-                <tr>
+                <tr class="data">
                   <td>48 часов</td>
+                </tr>
+                <tr class="features">
+                  <td>Без подзарядки</td>
                 </tr>
               </table>
             </li>
             <li class="slider-item">
               <img src="img/promo-quadcopter.png" width="525" height="335" alt="Квадрокоптеры">
-              <h3>Порхает как бабочка, жалит как пчела!</h3>
+              <span class="slider-item-number">03</span>
+              <h3>Порхает как бабочка,<br>жалит как пчела!</h3>
               <p>Это обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              <a href="#">Подробнее</a>
+              <a class="button" href="#">Подробнее</a>
               <table class="promo-table">
-                <tr>
-                  <td>Дальность полета</td>
-                  <td>Радиус поражения</td>
-                </tr>
-                <tr>
+                <tr class="data">
                   <td>800 м</td>
                   <td>50 м</td>
+                </tr>
+                <tr class="features">
+                  <td>Дальность полета</td>
+                  <td>Радиус поражения</td>
                 </tr>
               </table>
             </li>
@@ -204,11 +209,11 @@
             </a>
           </li>
         </ul>
-      </section> 
+      </section>
 
       <section class="company-info">
         <h2 class="visually-hidden">Информация о компании</h2>
-        <section class="about us">
+        <section class="about-us">
           <h2 class="section-title">О нас</h2>
           <p>Огромный выбор гаджетов не оставит ранодушным гика, который есть в каждом из нас.</p>
           <p>Мы можем доставить Ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
@@ -232,45 +237,51 @@
     </main>
 
     <footer class="main-footer">
-      <a class="footer-logo">Device</a>
-      <address>г.Москва, ул. Строителей, 15</address>
-      <ul class="footer-user-navigation">
-        <li class="footer-login-link">
-          <a href="#">Войти</a>
-        </li>
-        <li class="footer-compare">
-          <a href="#">Сравнить</a>
-        </li>
-        <li class="footer-cart">
-          <a href="#">Корзина</a>
-        </li>
-      </ul>
-      <ul class="footer-main-navigation">
-        <li class= "footer-delivery">
-          <a href="delivery.html">Доставка</a>
-        </li>
-        <li class= "footer-warranty">
-          <a href="warranty.html">Гарантия</a>
-        </li>
-        <li class= "footer-contacts">
-          <a href="contacts.html">Контакты</a>
-        </li>
-      </ul>
-      <a class="footer-phone" href="+74954959595">Тел.:+7(495)495-95-95</a>
-      <ul class="social">
-        <li>
-          <a class="social-button" href="#">Фейсбук</a>
-        </li>
-        <li>
-          <a class="social-button" href="#">Инстаграм</a>
-        </li>
-        <li>
-          <a class="social-button" href="#">Твиттер</a>
-        </li>
-      </ul>
-      <a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy">
-      </a>
+      <div class="main-footer-left">
+        <a class="footer-logo">Device</a>
+        <address>г.Москва, ул. Строителей, 15</address>
+      </div>
+      <div class="main-footer-center">
+        <ul class="footer-main-navigation">
+          <li class= "footer-main-navigation-item">
+            <a href="delivery.html">Доставка</a>
+          </li>
+          <li class= "footer-main-navigation-item">
+            <a href="warranty.html">Гарантия</a>
+          </li>
+          <li class= "footer-main-navigation-item">
+            <a href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+        <ul class="social">
+          <li>
+            <a class="social-button" href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a class="social-button" href="#">Инстаграм</a>
+          </li>
+          <li>
+            <a class="social-button" href="#">Твиттер</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer-right">
+        <ul class="footer-user-navigation">
+          <li class="footer-user-navigation-item">
+            <a href="#">Войти</a>
+          </li>
+          <li class="footer-user-navigation-item">
+            <a href="#">Сравнить</a>
+          </li>
+          <li class="footer-user-navigation-item">
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+        <a class="footer-phone" href="+74954959595">Тел.:+7(495)495-95-95</a>
+        <a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy">
+        </a>
+      </div>
     </footer>
 
     <section class="modal modal-feedback">
@@ -278,16 +289,16 @@
       <h2 class="visually-hidden">Обратная связь</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="feedback-item">
-          <label for="feedback-name">Ваше имя:</label>
+          <label class="feedback-item-title" for="feedback-name">Ваше имя:</label>
           <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p class="feedback-item">
-          <label for="feedback-e-mail">Ваш e-mail:</label>
+          <label class="feedback-item-title" for="feedback-e-mail">Ваш e-mail:</label>
           <input id="feedback-e-mail" type="text" name="e-mail" placeholder="email@example.com">
         </p>
         <p class="feedback-item">
-          <label for="feedback-message">Текст письма:</label>
-          <input id="feedback-message" type="text" name="message" placeholder="В свободной форме">
+          <label class="feedback-item-title" for="feedback-message">Текст письма:</label>
+          <textarea id="feedback-message" name="message" placeholder="В свободной форме" cols="30" rows="10"></textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
