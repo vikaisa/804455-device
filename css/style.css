@@ -673,7 +673,7 @@ a {
 
 .promo.slider-label {
   position: absolute;
-  top: 322px;
+  bottom: 155px;
   z-index: 3;
 
   width: 12px;
@@ -731,7 +731,7 @@ a {
   position: relative;
 
   width: 50%;
-  padding: 70px 20px 0;
+  padding: 70px 20px 15px;
 }
 
 .slider-item-right::before {
